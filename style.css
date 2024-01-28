@@ -39,26 +39,14 @@ section::before{
     color: white;
     border: 1px solid white;
 }
-
+.home img{
+    width: 100%;
+}
 .home .arrow img{
     width: 60px;
 }
 
-#arrow{
-    animation:2s upDown infinite;
-}
 
-@keyframes upDown {
-        0%{
-            transform: translateY(0);
-        }
-        50%{
-            transform: translateY(10px);
-        }
-        100%{
-            transform: translateY(0);
-        }
-}
 /* End Home */
 
 /* star About */
@@ -155,4 +143,33 @@ section::before{
     border: 1px solid black;
     padding: 64px 32px;
     left: 100px;
+}
+
+#arrow{
+    animation:2s upDown infinite;
+}
+
+@keyframes upDown {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+}
+
+@media only screen and (max-width: 768px ){
+    .home img{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    section::before{
+        left: -10px;
+        font-size: 64px;
+    }
 }
